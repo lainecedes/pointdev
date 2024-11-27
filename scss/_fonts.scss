@@ -1,0 +1,44 @@
+// Red Hat Display - Regular
+// @font-face {
+//     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//     font-family: 'Red Hat Display';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url('../fonts/red-hat-display/RedHatDisplay-Regular.ttf') format('ttf')
+// }
+
+// Red Hat Display - Bold
+// @font-face {
+//     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+//     font-family: 'Red Hat Display';
+//     font-style: normal;
+//     font-weight: 700;
+//     src: url('../fonts/red-hat-display/RedHatDisplay-Bold.ttf') format('ttf')
+// }
+
+// Urbanist - Black
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Urbanist';
+	font-style: normal;
+	font-weight: 900;
+	src: url('../public/fonts/urbanist/Urbanist-Black.ttf') format('ttf')
+}
+
+// DM Sans - regular
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../public/fonts/dm-sans/DMSans-Regular.ttf') format('ttf')
+}
+
+// DM Sans - bold
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../public/fonts/dm-sans/DMSans-Bold.ttf') format('ttf')
+}

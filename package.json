@@ -1,22 +1,22 @@
 {
-  "name": "pointdev",
-  "version": "1.0.0",
-  "description": "Repo for portfolio migration",
-  "main": "index.js",
-  "scripts": {
-  "sass": "sass --watch scss:css",
-  "start": "node app.js",
-  "dev": "nodemon app.js"
-},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^3.1.7",
-    "sass": "^1.81.0"
-  },
-  "dependencies": {
-    "ejs": "^3.1.10",
-    "express": "^4.21.1"
-  }
+	"name": "pointdev",
+	"version": "1.0.0",
+	"description": "Repo for portfolio migration",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch scss:css",
+		"start": "node app.js",
+		"dev": "nodemon app.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"nodemon": "^3.1.7",
+		"sass": "^1.81.0"
+	},
+	"dependencies": {
+		"ejs": "^3.1.10",
+		"express": "^4.21.1"
+	}
 }
