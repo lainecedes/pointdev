@@ -4,8 +4,10 @@
   "description": "Repo for portfolio migration",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss:css"
-  },
+  "sass": "sass --watch scss:css",
+  "start": "node app.js",
+  "dev": "nodemon app.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
