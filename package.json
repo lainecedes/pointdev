@@ -1,0 +1,19 @@
+{
+  "name": "pointdev",
+  "version": "1.0.0",
+  "description": "Repo for portfolio migration",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.81.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  }
+}
