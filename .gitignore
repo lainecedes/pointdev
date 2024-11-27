@@ -137,3 +137,6 @@ dist
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Jetbrains
+.idea
