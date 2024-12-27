@@ -15,10 +15,7 @@ export default defineConfig({
             input: path.resolve(__dirname, 'public/scripts/script.js'),
         },
         define: {
-            'process.env.PORT': JSON.stringify(process.env.PORT),
-            'process.env.CLIENT_ID': JSON.stringify(process.env.CLIENT_ID),
-            'process.env.CLIENT_SECRET': JSON.stringify(process.env.CLIENT_SECRET),
-            'process.env.REDIRECT_URI': JSON.stringify(process.env.REDIRECT_URI)
+            'process.env.PORT': JSON.stringify(process.env.PORT)
         },
     },
 });
