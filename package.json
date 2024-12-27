@@ -1,22 +1,31 @@
 {
-	"name": "pointdev",
-	"version": "1.0.0",
-	"description": "Repo for portfolio migration",
-	"main": "index.js",
-	"scripts": {
-		"sass": "sass --watch scss:css",
-		"start": "node app.js",
-		"dev": "nodemon app.js"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"nodemon": "^3.1.7",
-		"sass": "^1.81.0"
-	},
-	"dependencies": {
-		"ejs": "^3.1.10",
-		"express": "^4.21.1"
-	}
+    "name": "pointdev",
+    "version": "1.0.0",
+    "description": "Repo for portfolio migration",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch scss/styles.scss:public/css/styles.css",
+        "start": "node app.js",
+        "dev": "concurrently \"nodemon app.js\" \"vite\"",
+        "build": "vite build",
+        "serve": "npm run build && npm run start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "concurrently": "^9.1.0",
+        "nodemon": "^3.1.7",
+        "sass": "^1.81.0"
+    },
+    "dependencies": {
+        "connect-flash": "^0.1.1",
+        "dotenv": "^16.4.7",
+        "ejs": "^3.1.10",
+        "express": "^4.21.1",
+        "express-session": "^1.18.1",
+        "passport": "^0.7.0",
+        "passport-local": "^1.0.0",
+        "vite": "^6.0.5"
+    }
 }

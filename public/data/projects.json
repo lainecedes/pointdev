@@ -1,46 +1,63 @@
 {
     "projects": [
-      {
-        "name": "Mokum Corners",
-        "description": "Project ISGA - International shop and recipe mobile site",
-        "lang": "EN",
-        "img": "../images/mokumcorners.png",
-        "pageUrl": "mokum-corners",
-        "url": "https://www.behance.net/gallery/143793153/Mokum-Corners"
-      },
-      {
-        "name": "Salut",
-        "description": "A mobile app project where you easily send in your package returns",
-        "lang": "EN",
-        "img": "../images/salut.png",
-        "pageUrl": "salut-app",
-        "url": "https://www.behance.net/gallery/167237005/Salut-Parcel-return-app"
-      },
-      {
-        "name": "ADE",
-        "description": "Redesigning the ADE website with accesibility in mind",
-        "lang": ["NL", "EN"],
-        "img": "../images/ade.png",
-        "pageUrl": "ade-redesign",
-        "url": "https://github.com/lainecedes/FED2022"
-      },
-      {
-        "name": "Creative Captioning, Bitch!",
-        "description": "Turning closed captions into a creative viewing experience for the deaf and hard of hearing",
-        "lang": "NL",
-        "img": "../images/creative-captioning.png",
-        "pageUrl": "creative-captioning",
-        "url": "https://github.com/lainecedes/HCD2024"
-      },
-      {
-        "name": "Music Gallery",
-        "description": "A Spotify API based app where you can make recommended playlists based on your top 10 tracks",
-        "lang": "EN",
-        "img": "../images/music-gallery.png",
-        "pageUrl": "music-gallery",
-        "url": "https://github.com/lainecedes/API-2324"
-      }
+        {
+            "name": "Mokum Corners",
+            "description": "Project ISGA - International shop and recipe mobile site",
+            "lang": "EN",
+            "img": "../images/mokumcorners.webp",
+            "imgFallback": "../images/mokumcorners.jpg",
+            "pageUrl": "mokum-corners",
+            "url": "https://www.behance.net/gallery/143793153/Mokum-Corners"
+        },
+        {
+            "name": "Salut",
+            "description": "A mobile app project where you easily send in your package returns",
+            "lang": "EN",
+            "img": "../images/salut.webp",
+            "imgFallback": "../images/salut.jpg",
+            "pageUrl": "salut-app",
+            "url": "https://www.behance.net/gallery/167237005/Salut-Parcel-return-app"
+        },
+        {
+            "name": "ADE",
+            "description": "Redesigning the ADE website with accesibility in mind",
+            "lang": [
+                "NL",
+                "EN"
+            ],
+            "img": "../images/ade.webp",
+            "imgFallback": "../images/ade.jpg",
+            "pageUrl": "ade-redesign",
+            "url": "https://github.com/lainecedes/FED2022"
+        },
+        {
+            "name": "Creative Captioning, Bitch!",
+            "description": "Turning closed captions into a creative viewing experience for the deaf and hard of hearing",
+            "lang": "NL",
+            "img": "../images/cc.webp",
+            "imgFallback": "../images/cc.jpg",
+            "pageUrl": "creative-captioning",
+            "url": "https://github.com/lainecedes/HCD2024"
+        },
+        {
+            "name": "Music Gallery",
+            "description": "A Spotify API based app where you can make recommended playlists based on your top 10 tracks",
+            "lang": "EN",
+            "img": "../images/musicgallery.webp",
+            "imgFallback": "../images/musicgallery.jpg",
+            "pageUrl": "music-gallery",
+            "url": "https://github.com/lainecedes/API-2324"
+        },
+        {
+            "name": "Radiance",
+            "description": "A skincare app, test",
+            "lang": "EN",
+            "img": "../images/radiance.webp",
+            "imgFallback": "../images/radiance.png",
+            "pageUrl": "radiance",
+            "url": "https://github.com/lainecedes/PT2023"
+        }
     ]
-  }
+}
 
   

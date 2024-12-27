@@ -1,0 +1,49 @@
+
+
+header#top {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 150;
+	height: 6rem;
+	background: color(ade);
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 0 2rem;
+
+		.branding {
+			width: 6rem;
+		}
+
+		.menu {
+			display: flex;
+			flex-direction: row;
+			gap: 3rem;
+
+
+			ul {
+				display: flex;
+				flex-direction: row;
+				gap: 3rem;
+
+				li {
+					list-style: none;
+
+					a {
+						font-family: $font-heading;
+						text-decoration: none;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}

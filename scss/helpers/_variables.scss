@@ -1,29 +1,32 @@
 // Breakpoints
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
-$breakpoint-xxl: 1440px;
+$breakpoint-lg: 1200px;
 
 // Colors
 $colors: (
-		primary: #fff,
-		secondary: #000,
-		tertiary: #240046,
-		tertiary-dark-accent: #3c096c,
-		tertiary-light-accent: #7b2cbf,
-		button-hover: #B55FFF,
+		primary: #f26a8d,
+		secondary: #f49cbb,
+		tertiary: #30bcb3,
+		quaternary: #fcefef,
+		quinary: #5d576b,
+
+		secondary-accent: #5ec9c0,
+
+		black: #000,
+		white: #FFF,
+
 		outline: #5BE8CC,
-		invalid: #ff0000,
-		valid: #00a400
+		ade: #9872FF
 );
 
 // Fonts
-$font-heading: 'Urbanist', sans-serif;
-$font-body: 'Red Hat Display', sans-serif;
+$font-heading: 'Michroma', sans-serif;
+$font-body: 'Funnel Display', sans-serif;
 
-$font-weight-normal: 500;
+$font-weight-regular: 400;
 $font-weight-bold: 700;
-$font-weight-black: 900;
+
+$nav-height: 8rem;
 
 

@@ -1,0 +1,14 @@
+<section class="projects">
+    <% projects.forEach(project => { %>
+        <div class="project-card">
+            <h2><%= project.name %></h2>
+            <p><%= project.description %></p>
+            <picture>
+                <source srcset="<%= project.imgWebp %>" type="image/webp">
+                <source srcset="<%= project.img %>" type="image/png">
+                <img src="<%= project.img %>" alt="<%= project.name %> image" class="project-image">
+            </picture>
+            <a href="<%= project.url || ('/' + project.pageUrl) %>">View Project</a>
+        </div>
+    <% }); %>
+</section>
