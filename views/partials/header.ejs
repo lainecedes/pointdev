@@ -6,11 +6,6 @@
             <ul class="items">
                 <li><a href="/about"><%= title === 'About' ? 'About Me' : 'About' %></a></li>
                 <li><a href="/projects"><%= title === 'Projects' ? 'Projects' : 'Projects' %></a></li>
-                <li>
-                    <% if (user) { %>
-                        <a href="/logout">Logout</a>
-                    <% } %>
-                </li>
             </ul>
             <button class="menu-button" aria-label="Toggle Menu"></button>
         </div>
