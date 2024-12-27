@@ -11,7 +11,7 @@ const fs = require('fs');
 const app = express();
 const port = process.env.PORT || 3000;
 
-const authEnabled = process.env.NODE_ENV !== 'production' || process.env.AUTH_ENABLED === 'true';
+const authEnabled = process.env.NODE_ENV === 'development';
 
 app.use(session({
     secret: process.env.SESSION_SECRET,
