@@ -1,8 +1,104 @@
-h1 {
-    font-family: $font-heading;
+html {
+	font-size: 62.5%;  //  1rem = 10px
+}
+
+h1, h2, h3, h4 {
+	font-family: $font-heading;
 	font-weight: $font-weight-bold;
 }
 
+/* General font sizes */
+body {
+	font-size: 1.6rem;
+	font-family: $font-body;
+}
+
+/* Responsive font size adjustments for different breakpoints */
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
 p {
-    font-family: $font-body;
+	font-size: 1.6rem;
+}
+
+/* Apply larger font sizes at different breakpoints */
+@include respond-to(from-sm) {
+	body {
+		font-size: 1.4rem;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+	}
+}
+
+@include respond-to(from-md) {
+	body {
+		font-size: 1.6rem;
+	}
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2 {
+		font-size: 3.5rem;
+	}
+
+	h3 {
+		font-size: 3rem;
+	}
+}
+
+@include respond-to(from-lg) {
+	body {
+		font-size: 2rem;
+	}
+
+	h1 {
+		font-size: 4.5rem;
+	}
+
+	h2 {
+		font-size: 4rem;
+	}
+
+	h3 {
+		font-size: 3.5rem;
+	}
+}
+
+@include respond-to(from-xl) {
+	body {
+		font-size: 2rem;
+	}
+
+	h1 {
+		font-size: 5rem;
+	}
+
+	h2 {
+		font-size: 4.5rem;
+	}
+
+	h3 {
+		font-size: 4rem;
+	}
 }

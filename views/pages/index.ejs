@@ -1,12 +1,29 @@
-<h1>Projects</h1>
+<main id="intro">
+    <section class="full-height">
+        <div class="intro-flex">
+            <div class="intro">
+                <h2>Elaine Wilberforce</h2>
+                <p>lainecedes.dev</p>
+            </div>
+            <div class="card-container">
+                <div class="img-container">
+                    <img class="card-img" src="/images/lainecedes.png" alt="Elaine Wilberforce">
+                </div>
+                <p>Front-end Developer</p>
+                <p>Student at the Amsterdam University of Applied Sciences</p>
+            </div>
+            <div class="project-count">
+                <p>Projects</p>
+            </div>
+        </div>
+    </section>
 
-<div class="projects">
-  <% projects.forEach(project => { %>
-    <div class="project-card">
-      <h2><%= project.name %></h2>
-      <p><%= project.description %></p>
-      <img src="<%= project.img %>" alt="<%= project.name %> image" class="project-image">
-      <a href="<%= project.url || ('/' + project.pageUrl) %>">View Project</a>
-    </div>
-  <% }); %>
-</div>
+    <%- include('../partials/slider') %>
+
+    <section class="last-section">
+        <div class="message">
+            <p>I am currently seeking an internship for 20 weeks / 100 days.</p>
+            <p>Now working at..</p>
+        </div>
+    </section>
+</main>

@@ -1,44 +1,53 @@
-// Red Hat Display - Regular
-// @font-face {
-//     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-//     font-family: 'Red Hat Display';
-//     font-style: normal;
-//     font-weight: 400;
-//     src: url('../fonts/red-hat-display/RedHatDisplay-Regular.ttf') format('ttf')
-// }
-
-// Red Hat Display - Bold
-// @font-face {
-//     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-//     font-family: 'Red Hat Display';
-//     font-style: normal;
-//     font-weight: 700;
-//     src: url('../fonts/red-hat-display/RedHatDisplay-Bold.ttf') format('ttf')
-// }
-
-// Urbanist - Black
+// Chakra Petch - regular
 @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-	font-family: 'Urbanist';
-	font-style: normal;
-	font-weight: 900;
-	src: url('../public/fonts/urbanist/Urbanist-Black.ttf') format('ttf')
-}
-
-// DM Sans - regular
-@font-face {
-	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-	font-family: 'DM Sans';
+	font-family: 'Chakra Petch';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../public/fonts/dm-sans/DMSans-Regular.ttf') format('ttf')
+	src: url('/fonts/chakra-petch/ChakraPetch-Regular.ttf') format('truetype')
 }
 
-// DM Sans - bold
+// Chakra Petch - bold
 @font-face {
 	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-	font-family: 'DM Sans';
+	font-family: 'Chakra Petch';
 	font-style: normal;
 	font-weight: 700;
-	src: url('../public/fonts/dm-sans/DMSans-Bold.ttf') format('ttf')
+	src: url('/fonts/chakra-petch/ChakraPetch-Bold.ttf') format('truetype')
+}
+
+// Chakra Petch - bold italic
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Chakra Petch';
+	font-style: italic;
+	font-weight: 700;
+	src: url('/fonts/chakra-petch/ChakraPetch-BoldItalic.ttf') format('truetype')
+}
+
+// Funnel Display - regular
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Funnel Display';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/funnel-display/FunnelDisplay-Regular.ttf') format('truetype')
+}
+
+// Funnel Display - bold
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Funnel Display';
+	font-style: normal;
+	font-weight: 700;
+	src: url('/fonts/funnel-display/FunnelDisplay-Bold.ttf') format('truetype')
+}
+
+// Michroma - regular
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Michroma';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/michroma/Michroma-Regular.ttf') format('truetype')
 }
