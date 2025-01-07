@@ -5,27 +5,27 @@ $breakpoint-lg: 1200px;
 
 // Colors
 $colors: (
-		primary: #f26a8d,
-		secondary: #f49cbb,
-		tertiary: #30bcb3,
-		quaternary: #fcefef,
-		quinary: #5d576b,
+		primary: #ffafcc,
+		primary-alt: #cdb4db,
+		secondary: #a2d2ff,
+		tertiary: #7209b7,
 
-		secondary-accent: #5ec9c0,
+		contrast-text: #4b2e83,
+
+		background: #f8edeb,
 
 		black: #000,
 		white: #FFF,
-
-		outline: #5BE8CC,
 		ade: #9872FF
 );
 
 // Fonts
-$font-heading: 'Michroma', sans-serif;
+$font-heading: 'DM Sans', sans-serif;
 $font-body: 'Funnel Display', sans-serif;
 
 $font-weight-regular: 400;
 $font-weight-bold: 700;
+$font-weight-black: 900;
 
 $nav-height: 8rem;
 

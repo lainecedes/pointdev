@@ -1,20 +1,19 @@
-<section class="full-height projects-slider">
+<section class="projects-slider" id="projects">
     <h2>Projects</h2>
-    <div class="swiper">
+    <div class="swiper project-carousel">
         <div class="swiper-wrapper">
             <% projects.forEach(project => { %>
-                <div class="swiper-slide">
-                    <div class="project-card">
-                        <h2><%= project.name %></h2>
-                        <p><%= project.description %></p>
-                        <picture>
-                            <source srcset="<%= project.imgWebp %>" type="image/webp">
-                            <source srcset="<%= project.img %>">
-                            <img src="<%= project.img %>" alt="<%= project.name %> image" class="project-image">
-                        </picture>
-                        <a href="<%= project.url || ('/' + project.pageUrl) %>">View Project</a>
+                <a href="<%= project.url %>" class="swiper-slide">
+                    <picture>
+                        <source srcset="<%= project.imgWebp %>" type="image/webp">
+                        <source srcset="<%= project.img %>">
+                        <img src="<%= project.img %>" alt="<%= project.name %> image" class="project-image">
+                    </picture>
+                    <div class="project-data">
+                        <h2><%- project.name %></h2>
+                        <p><%- project.description %></p>
                     </div>
-                </div>
+                </a>
             <% }); %>
         </div>
         <div class="swiper-pagination"></div>

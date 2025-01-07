@@ -1,13 +1,28 @@
 <header id="top">
-    <nav>
+    <nav class="navbar">
         <h1 class="visually-hidden">Elaine Wilberforce</h1>
-        <a href="/"><img class="branding" src="/images/lainecedes.png" alt="Elaine "></a>
+        <a href="/">
+            <img src="/images/lainecedes.png" alt="Elaine Wilberforce">
+            <div class="brand-info">
+                <span>Elaine Wilberforce</span>
+                <span>lainecedes.dev</span>
+            </div>
+        </a>
         <div class="menu">
-            <ul class="items">
-                <li><a href="/about"><%= title === 'About' ? 'About Me' : 'About' %></a></li>
-                <li><a href="/projects"><%= title === 'Projects' ? 'Projects' : 'Projects' %></a></li>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/lainecedes/">
+                        <svg aria-label="Github icon" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                            <use href="/svg/social.svg#github"/>
+                        </svg>
+                    </a>
+                </li>
             </ul>
-            <button class="menu-button" aria-label="Toggle Menu"></button>
+            <button class="menu-button" aria-label="Toggle Menu">
+                <img src="/images/list.svg" alt="Menu icon">
+            </button>
         </div>
     </nav>
 </header>

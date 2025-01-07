@@ -1,21 +1,112 @@
 .projects-slider {
-	.swiper {
+	.project-carousel {
 		position: relative;
-		.swiper-wrapper {
-			.swiper-slide {
-				.project-card {
-					picture {
-						display: block;
-						width: 20rem;
-						height: 20rem;
+		overflow: visible;
 
-						img {
-							width: 100%;
-							height: 100%;
-							object-fit: cover;
+		padding: 0 5rem;
+
+		@include respond-to(up-to-sm) {
+			padding: 0;
+		}
+
+		.swiper-wrapper {
+			position: relative;
+			width: 100%;
+
+			.swiper-slide {
+				position: relative;
+				text-decoration: none;
+				color: inherit;
+
+				picture {
+					display: block;
+					aspect-ratio: 380 / 380;
+
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						border-radius: 1rem;
+					}
+				}
+
+				.project-data {
+					position: absolute;
+					width: 100%;
+					bottom: 0;
+					padding: 3rem;
+					background: color(secondary);
+					border-radius: 0 0 1rem 1rem;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					gap: 2rem;
+					height: 15rem;
+					color: color(black);
+
+					h2 {
+						flex-shrink: 0;
+						margin: 0;
+						font-size: 3rem;
+					}
+					p {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.swiper-pagination {
+			bottom: -4.5rem;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 10;
+			width: max-content;
+
+			&.swiper-pagination-bullets {
+				&.swiper-pagination-horizontal {
+					position: relative;
+
+					.swiper-pagination-bullet {
+						width: 1.5rem;
+						height: 1.5rem;
+						opacity: 1;
+						background: color(primary-alt);
+						transition: transform 0.2s ease;
+
+						&.swiper-pagination-bullet-active {
+							background: color(contrast-text);
+							transform: scale(1.3);
 						}
 					}
 				}
+			}
+		}
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			position: absolute;
+			color: color(contrast-text);
+			top: 105%;
+			transform: translateY(1rem);
+			z-index: 10;
+		}
+
+		.swiper-button-prev {
+			left: 38%;
+		}
+
+		.swiper-button-next {
+			right: 38%;
+		}
+
+		@include respond-to(up-to-sm) {
+			.swiper-button-prev {
+				left: 20%;
+			}
+
+			.swiper-button-next {
+				right: 20%;
 			}
 		}
 	}

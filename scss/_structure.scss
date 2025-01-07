@@ -38,9 +38,8 @@ body {
 	flex-direction: column;
 	height: 100vh;
 	min-height: 100%;
-	background: color(ade);
+	background: color(background);
 }
-
 
 // wrappers
 .intro-grid {
@@ -53,10 +52,6 @@ body {
 .full-height {
 	height: 100vh;
 	scroll-snap-align: start;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	justify-content: center;
 }
 
 .first {
@@ -64,82 +59,186 @@ body {
 }
 
 .last-section {
-	height: 25vh;
-
 	.message {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
 		p {
 			font-family: $font-heading;
+			font-size: 2rem;
 		}
 	}
 }
 
-// main, footer
-main {
-	@include respond-to(from-sm) {
-		padding: 0 2rem;
-	}
-}
-
 footer#bottom {
-	height: 75%;
+	display: flex;
+	justify-content: center;
+	color: color(contrast-text);
+
+	p {
+		font-size: 1.4rem;
+	}
+
+	span {
+		font-family: $font-heading;
+		font-weight: 900;
+	}
 }
 
 
 // Code
 
 main#intro {
-	.intro-flex {
+	section {
+		padding-top: 5rem;
+		padding-inline: 10rem;
+	}
+
+	.hero {
 		display: flex;
 		flex-direction: column;
+		/*background: color(primary-alt);*/
+		background-image: linear-gradient(-45deg, #ffafcc, #cdb4db, #a2d2ff);
 
-		.img-container {
-			border-radius: 50%;
-			width: 25rem;
-			height: 25rem;
-			overflow: hidden;
+		.intro-flex {
 			display: flex;
-			justify-content: center;
-			align-items: center;
-			background-color: color(quaternary);
+			flex-direction: column;
 
-			.card-img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-		}
-
-		.card-container {
-			padding-top: 2rem;
-		}
-
-		.project-count {
-		}
-
-		.intro {
-			position: relative;
-			top: 10rem;
-
-			h2 {
-				font-size: 9rem;
-				text-wrap: nowrap;
-			}
-
-			p {
+			.img-container {
 				position: relative;
-				left: -10rem;
-				bottom: -5rem;
+				top: 0;
+				width: 40rem;
+				height: 40rem;
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: color(quaternary);
+
+				.card-img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
 			}
 
+			.intro {
+				h2 {
+				}
+
+				p {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+
+
+	.stack {
+		.stack-container {
 			display: flex;
 			flex-direction: row;
-			order: 2;
+			justify-content: center;
+			gap: 10rem;
+
+			@include respond-to(up-to-sm) {
+				flex-direction: column;
+				align-items: center;
+				gap: 5rem;
+			}
+
+			ul {
+				margin: 0;
+				padding: 0;
+
+				li {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					list-style: none;
+
+					img {
+						padding: 0.5em;
+						width: 10rem;
+					}
+				}
+
+				li:nth-of-type(4) > img {
+					width: 8rem;
+				}
+
+				li:nth-of-type(7) > img,
+				li:nth-of-type(8) > img {
+					width: 12em;
+				}
+			}
+		}
+	}
+
+	.last-section {
+		.contact-container {
+			display: flex;
+			flex-direction: row;
+
+			@include respond-to(up-to-sm) {
+				flex-direction: column;
+			}
+
+			.message {
+				a {
+					font-weight: 900;
+					color: color(contrast-text);
+					text-decoration: none;
+
+					&:hover,
+					&:focus {
+						color: color(tertiary);
+					}
+				}
+			}
+
+			.social-links {
+				ul {
+					display: flex;
+					flex-direction: column;
+					gap: 2rem;
+					margin: 0;
+					padding: 0;
+
+					li {
+						font-family: $font-heading;
+						font-weight: 900;
+						list-style: none;
+
+						a {
+							text-decoration: none;
+							color: color(contrast-text);
+							display: flex;
+							align-items: center;
+							white-space: nowrap;
+							gap: 2rem;
+
+							&:hover,
+							&:focus {
+								color: color(tertiary);
+
+								svg use {
+									fill: color(tertiary);
+								}
+							}
+
+							svg {
+								width: 4rem;
+								height: 4rem;
+
+								use {
+									fill: color(contrast-text);
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
+
+
 

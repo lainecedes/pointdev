@@ -3,15 +3,15 @@
 header#top {
 	display: flex;
 	align-items: center;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 150;
 	height: 6rem;
-	background: color(ade);
+	background: color(primary-alt);
 
-	nav {
+	nav.navbar {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -19,8 +19,57 @@ header#top {
 		width: 100%;
 		padding: 0 2rem;
 
-		.branding {
-			width: 6rem;
+		&.active .menu-button img {
+			content: url('../images/x-lg.svg');
+		}
+
+		a {
+			position: relative;
+			display: inline-block;
+			text-decoration: none;
+			color: color(contrast-text);
+
+			img {
+				display: block;
+				width: 6rem;
+			}
+
+			.brand-info {
+				display: flex;
+				flex-direction: column;
+				position: absolute;
+				white-space: nowrap;
+				top: 0.5rem;
+				transform: translateX(-150%);
+				z-index: -2;
+				transition: transform 0.2s ease;
+				font-family: $font-heading;
+
+				@include respond-to(up-to-sm) {
+					top: 1rem;
+				}
+
+				span {
+					margin: 0.2rem 0;
+
+					&:nth-of-type(1) {
+						font-weight: 900;
+						font-style: italic;
+					}
+
+					&:nth-of-type(2) {
+						font-size: 1.4rem;
+					}
+				}
+			}
+
+			&:hover .brand-info {
+				transform: translateX(35%);
+
+				@include respond-to(up-to-sm) {
+					transform: translateX(50%);
+				}
+			}
 		}
 
 		.menu {
@@ -31,19 +80,108 @@ header#top {
 
 			ul {
 				display: flex;
-				flex-direction: row;
 				gap: 3rem;
+
 
 				li {
 					list-style: none;
 
+					svg {
+						width: 2.5rem;
+						height: 2.5rem;
+
+						use {
+							fill: color(contrast-text);
+
+							&:hover, &:focus {
+								fill: color(white);
+							}
+						}
+					}
+
 					a {
 						font-family: $font-heading;
+						font-weight: 900;
 						text-decoration: none;
-						color: white;
+						color: color(contrast-text);
+
+						&:hover, &:focus {
+							color: color(white);
+						}
 					}
 				}
 			}
+
+			.menu-button {
+				appearance: none;
+				border: none;
+				background: none;
+				position: relative;
+				z-index: 100;
+
+				img {
+					width: 2.5em;
+				}
+			}
 		}
+	}
+}
+
+// @TODO: change old structure to SCSS later
+.navbar .menu ul {
+	display: flex;
+	gap: 1em;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transform: translateX(100%);
+	background: color(primary-alt);
+}
+
+.navbar.active ul {
+	transform: translateX(0%);
+}
+
+
+.menu ul {
+	display: flex;
+	align-items: center;
+}
+
+.menu ul li {
+	list-style: none;
+	font-size: 1em;
+	cursor: pointer;
+	transition: all 0.1s ease;
+	flex-basis: 9em;
+	flex-grow: 1;
+}
+
+.menu ul li:hover > *:not(button) {
+	transition: all 0.3s ease;
+}
+
+@media (min-width: 800px) {
+	.navbar .menu button {
+		display: none;
+	}
+
+	.navbar .menu ul {
+		position: static;
+		transform: none;
+		background: none;
+		padding: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.navbar.active .menu ul {
+		display: flex;
+		flex-direction: column;
+		font-size: 2em;
+		margin: 0;
+		padding: 2em 0 0 0;
 	}
 }

@@ -1,6 +1,15 @@
 {
     "projects": [
         {
+            "name": "Weekly Nerd",
+            "description": "A personal blog about webdev in Old Twitter style",
+            "lang": "EN",
+            "img": "../images/weeklynerd.webp",
+            "imgFallback": "../images/weeklynerd.png",
+            "pageUrl": "weeklynerd",
+            "url": "https://weeklynerd.elainewilberforce.com/"
+        },
+        {
             "name": "Mokum Corners",
             "description": "Project ISGA - International shop and recipe mobile site",
             "lang": "EN",
@@ -31,7 +40,7 @@
             "url": "https://github.com/lainecedes/FED2022"
         },
         {
-            "name": "Creative Captioning, Bitch!",
+            "name": "Creative Captioning",
             "description": "Turning closed captions into a creative viewing experience for the deaf and hard of hearing",
             "lang": "NL",
             "img": "../images/cc.webp",
@@ -50,7 +59,7 @@
         },
         {
             "name": "Radiance",
-            "description": "A skincare app, test",
+            "description": "A custom skincare app made with MongoDB",
             "lang": "EN",
             "img": "../images/radiance.webp",
             "imgFallback": "../images/radiance.png",
