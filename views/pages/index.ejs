@@ -1,29 +1,76 @@
 <main id="intro">
-    <section class="full-height">
+    <section class="hero" id="about">
         <div class="intro-flex">
             <div class="intro">
-                <h2>Elaine Wilberforce</h2>
-                <p>lainecedes.dev</p>
+                <h2>Hey, I'm <span class="name-effect">Elaine</span>.</h2>
+                <p>I’m a 23 year old student at the at the Amsterdam University of Applied Sciences, studying the bachelor Communication and Multimedia design, and creative front-end developer and designer based in Amsterdam, the Netherlands.</p>
+                <p> Ever since I was little, I've had a passion for the web and started a career in web design and development after my electrical engineering degree. I'm currently focused on front end design and development, and enjoy designing in a playful,
+                    colourful and interactive way. Over the years, I have learnt a lot and continue to learn and improve my skills.</p>
             </div>
-            <div class="card-container">
-                <div class="img-container">
-                    <img class="card-img" src="/images/lainecedes.png" alt="Elaine Wilberforce">
-                </div>
-                <p>Front-end Developer</p>
-                <p>Student at the Amsterdam University of Applied Sciences</p>
-            </div>
-            <div class="project-count">
-                <p>Projects</p>
+            <div class="img-container">
+                <img class="card-img" src="/images/lainecedes.png" alt="Elaine Wilberforce">
             </div>
         </div>
     </section>
 
     <%- include('../partials/slider') %>
 
-    <section class="last-section">
-        <div class="message">
-            <p>I am currently seeking an internship for 20 weeks / 100 days.</p>
-            <p>Now working at..</p>
+    <section class="stack" id="stack">
+        <h2>Stack</h2>
+        <div class="stack-container">
+            <ul class="front-end">
+                <h3>Front-end</h3>
+                <% stack.frontend.forEach(tech => { %>
+                    <li><img src="<%= tech.img %>" alt="<%= tech.name %>">
+                        <p><%= tech.name %></p>
+                    </li>
+                <% }); %>
+            </ul>
+            <ul class="back-end">
+                <h3>Back-end</h3>
+                <% stack.backend.forEach(tech => { %>
+                    <li><img src="<%= tech.img %>" alt="<%= tech.name %>">
+                        <p><%= tech.name %></p>
+                    </li>
+                <% }); %>
+            </ul>
+            <ul class="design">
+                <h3>Design</h3>
+                <% stack.design.forEach(tech => { %>
+                    <li><img src="<%= tech.img %>" alt="<%= tech.name %>">
+                        <p><%= tech.name %></p>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    </section>
+
+    <section class="last-section" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-container">
+            <div class="message">
+                <p>I am currently seeking an internship for 20 weeks / 100 days, starting on the <strong>3rd of February</strong>.</p>
+                <p>Now working at <a href="https://go2people.nl/ons-team/">Go2People</a> as a front-end developer, till the end of January.</p>
+            </div>
+            <div class="social-links">
+               <ul>
+                   <li><a href="https://www.github.com/lainecedes">
+                       <svg aria-label="Github icon" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                           <use href="/svg/social.svg#github"/>
+                       </svg>Github</a></li>
+                   <li><a href="https://www.linkedin.com/in/elainewilberforce">
+                           <svg aria-label="Linkedin icon" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                                <use href="/svg/social.svg#linkedin"/></svg>LinkedIn</a></li>
+                   <li><a href="https://www.elainewilberforce.com/">
+                       <svg aria-label="Dev icon" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                           <use href="/svg/social.svg#portfolio"/>
+                       </svg>My previous portfolio</a></li>
+                   <li><a href="mailto:hi@elainewilberforce.com">
+                       <svg aria-label="Mail icon" height="16" width="16" xmlns="http://www.w3.org/2000/svg">
+                           <use href="/svg/social.svg#mail"/>
+                       </svg>Send me a mail</a></li>
+               </ul>
+            </div>
         </div>
     </section>
 </main>

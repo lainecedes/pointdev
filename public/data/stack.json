@@ -1,0 +1,55 @@
+{
+    "stack": {
+        "frontend": [
+            {
+                "name": "HTML",
+                "img": "../icons/html.svg"
+            },
+            {
+                "name": "CSS",
+                "img": "../icons/css.svg"
+            },
+            {
+                "name": "Sass",
+                "img": "../icons/sass.svg"
+            },
+            {
+                "name": "Javascript",
+                "img": "../icons/js.svg"
+            },
+            {
+                "name": "SvelteKit",
+                "img": "../icons/svelte.svg"
+            }
+        ],
+        "backend": [
+            {
+                "name": "PHP",
+                "img": "../icons/php.svg"
+            },
+            {
+                "name": "Node.js",
+                "img": "../icons/node.svg"
+            },
+            {
+                "name": "Express",
+                "img": "../icons/express.svg"
+            },
+            {
+                "name": "Git",
+                "img": "../icons/git.svg"
+            }
+        ],
+        "design": [
+            {
+                "name": "Figma",
+                "img": "../icons/figma.svg"
+            },
+            {
+                "name": "Adobe Creative Cloud",
+                "img": "../icons/cc.svg"
+            }
+        ]
+    }
+}
+
