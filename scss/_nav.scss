@@ -49,6 +49,11 @@ header#top {
 					top: 1rem;
 				}
 
+				@include respond-to(only-md) {
+					top: 1.2rem;
+					padding-left: .5rem;
+				}
+
 				span {
 					margin: 0.2rem 0;
 
@@ -138,6 +143,7 @@ header#top {
 	right: 0;
 	transform: translateX(100%);
 	background: color(primary-alt);
+	@include transition(transform 0.3s ease-in-out);
 }
 
 .navbar.active ul {
@@ -154,9 +160,6 @@ header#top {
 	list-style: none;
 	font-size: 1em;
 	cursor: pointer;
-	transition: all 0.1s ease;
-	flex-basis: 9em;
-	flex-grow: 1;
 }
 
 .menu ul li:hover > *:not(button) {
@@ -182,6 +185,6 @@ header#top {
 		flex-direction: column;
 		font-size: 2em;
 		margin: 0;
-		padding: 2em 0 0 0;
+		padding: 3em 0 0 0;
 	}
 }

@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     });
 
+    // Menu Toggle Logic
     var menuButton = document.querySelector(".menu-button");
     menuButton.addEventListener("click", menuActive);
 
@@ -30,12 +31,12 @@ document.addEventListener('DOMContentLoaded', () => {
         var navBar = document.querySelector(".navbar");
         navBar.classList.toggle("active");
     }
+
+    // Close menu when any menu link is clicked
     var menuLinks = document.querySelectorAll(".navbar .menu ul li a");
 
     menuLinks.forEach(function(link) {
-        link.addEventListener("click", function(event) {
-            event.preventDefault();
-
+        link.addEventListener("click", function() {
             var navBar = document.querySelector(".navbar");
             navBar.classList.remove("active");
         });

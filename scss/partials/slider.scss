@@ -1,18 +1,16 @@
 .projects-slider {
+	overflow: hidden;
+	padding-bottom: 6rem;
+
 	.project-carousel {
 		position: relative;
 		overflow: visible;
-
-		padding: 0 5rem;
 
 		@include respond-to(up-to-sm) {
 			padding: 0;
 		}
 
 		.swiper-wrapper {
-			position: relative;
-			width: 100%;
-
 			.swiper-slide {
 				position: relative;
 				text-decoration: none;
@@ -48,20 +46,31 @@
 						flex-shrink: 0;
 						margin: 0;
 						font-size: 3rem;
+
+						@include respond-to(up-to-sm) {
+							font-size: 2rem;
+						}
 					}
+
 					p {
 						margin: 0;
+
+						@include respond-to(up-to-sm) {
+							@include line-clamp(2);
+						}
 					}
 				}
 			}
 		}
 
 		.swiper-pagination {
+			position: absolute;
 			bottom: -4.5rem;
 			left: 50%;
 			transform: translateX(-50%);
 			z-index: 10;
 			width: max-content;
+
 
 			&.swiper-pagination-bullets {
 				&.swiper-pagination-horizontal {
@@ -93,20 +102,20 @@
 		}
 
 		.swiper-button-prev {
-			left: 38%;
+			left: 30%;
 		}
 
 		.swiper-button-next {
-			right: 38%;
+			right: 30%;
 		}
 
 		@include respond-to(up-to-sm) {
 			.swiper-button-prev {
-				left: 20%;
+				left: 5rem;
 			}
 
 			.swiper-button-next {
-				right: 20%;
+				right: 5rem;
 			}
 		}
 	}

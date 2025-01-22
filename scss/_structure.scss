@@ -67,28 +67,12 @@ body {
 	}
 }
 
-footer#bottom {
-	display: flex;
-	justify-content: center;
-	color: color(contrast-text);
-
-	p {
-		font-size: 1.4rem;
-	}
-
-	span {
-		font-family: $font-heading;
-		font-weight: 900;
-	}
-}
-
-
 // Code
 
 main#intro {
 	section {
 		padding-top: 5rem;
-		padding-inline: 10rem;
+		padding-inline: 5rem;
 	}
 
 	.hero {
@@ -111,6 +95,11 @@ main#intro {
 				justify-content: center;
 				align-items: center;
 				background-color: color(quaternary);
+
+				@include respond-to(up-to-sm) {
+					width: 25rem;
+					height: 25rem;
+				}
 
 				.card-img {
 					width: 100%;
@@ -239,6 +228,23 @@ main#intro {
 		}
 	}
 }
+
+footer#bottom {
+	display: flex;
+	justify-content: center;
+	padding-top: 3rem;
+	color: color(contrast-text);
+
+	p {
+		font-size: 1.4rem;
+	}
+
+	span {
+		font-family: $font-heading;
+		font-weight: 900;
+	}
+}
+
 
 
 
